@@ -4,84 +4,135 @@
 }
 .page {
     display: flex;
-    flex-direction: row;
-    background-color: lightblue;
+    flex-direction: column;
+
+    
 }
 
 .left-panel {
     display: flex;
     flex-direction: column;
     background-color: rgba(243,244,248,255) ;
-    width: 300px;
+    width: 23%;
+    max-width: 400px;
+    min-width: 300px;
+
     height: 100%;
     text-align: center;
     margin: 0px;
     position: absolute;
+    align-items: center;
    
 }
 .pfp {
-    width: 200px;
+    width: 50%;
     border-radius: 50%;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 10%;
+
 }
 .picture {
     background-color: lightblue;
 }
 .name {
-    font-size: 30px;
-    margin-top: 50px;
+    font-size: clamp(20px, 1.5vw, 30px);
+    margin-top: 5%;
     font-family: Merriweather;
+    
 
 }
 .description {
-    margin-top: 25px;
-    margin-bottom: 80px;
-    font-size: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: clamp(15px, 1vw, 20px);
 }
 
 .button {
-    font-size: 25px;
-    margin-bottom: 35px;
+    font-size: 20px;
+    margin-bottom: 7%;
+    transition: transform 0.3s;
 }
 .button:hover {
-    cursor: pointer;
+    cursor: pointer;    
+    transform: translate(-10px);
+    opacity: 0.8;
 }
 .contacts {
     display: flex;
     flex-direction: row;
-    margin-top: 100px;
+    margin-top: 5%;
+
 
 }
 
 .logo {
-    width: 45px; 
-    height: 45px;
+    width: 15%; 
+    max-width: 100px;
     border-radius: 50%;
-    margin-left: 35px;
-    margin-right: 10px;
+    margin-left: 13%;
+    transition: transform 0.3s;
 }
 .logo:hover {
     cursor: pointer;
+    transform: translateY(-10px);
+    
 }
-.text {
-    margin-left: 300px;
-    margin-top: 300px;
-}
-.text-home {
-    margin-left: 300px;
-    margin-top: 300px;
-}
+
+
 .text-certifications {
     margin-left: 300px;
     margin-top: 100px;
     text-align: center;
 
+
 }
 .certification-image {
-    margin-left: 100px;
+    margin-left: 5%;
     margin-bottom: 100px;
     box-shadow: 10px 10px 5px #9c9c9c;
     vertical-align: middle;
     
+    
 }
+.home-text {
+    margin-left: 25%;
+    margin-top: 10%;
+    font-size: clamp(50px, 2vw, 60px);
+    font-family: Merriweather;
+  
+}
+.home-description {
+    margin-left: 30%;
+    font-size: clamp(15px, 2vw, 20px);
+
+    color: rgba(115,115,121,255);
+    font-family: Merriweather;
+    width: 50%;
+    line-height: 1.7;
+}
+
+.fade-in {
+    animation: fadeIn 5s;
+  }
+
+  .slide-in {
+    
+    animation: slide-in 1s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
