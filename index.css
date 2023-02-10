@@ -20,8 +20,9 @@
     height: 100%;
     text-align: center;
     margin: 0px;
-    position: absolute;
+    position: fixed;
     align-items: center;
+
    
 }
 .pfp {
@@ -90,7 +91,7 @@
     margin-bottom: 100px;
     box-shadow: 10px 10px 5px #9c9c9c;
     vertical-align: middle;
-    
+    animation: fadeIn 3s;
     
 }
 .home-text {
@@ -115,13 +116,13 @@
   }
 
   .slide-in {
-    
-    animation: slide-in 1s forwards;
+  
+    animation: fadeIn 3s, slide-in 1s forwards;
   }
   
   @keyframes slide-in {
     from {
-      transform: translateX(-100%);
+      transform: translateX(+100%);
     }
     to {
       transform: translateX(0);
