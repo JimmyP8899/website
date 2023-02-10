@@ -98,13 +98,13 @@
 }
 .home-text {
     margin-left: 30%;
-    margin-top: 15%;
+    margin-top: 10%;
     font-size: clamp(50px, 2vw, 60px);
     font-family: Merriweather;
 }
 .experience-text {
     margin-left: 30%;
-
+    width: 1000px;
     font-size: clamp(40px, 2vw, 50px);
     font-family: Merriweather;
     margin-bottom: 2%;
@@ -117,7 +117,7 @@
 }
 .hivestorm-pictures {
     width: 300px;
-    margin-top: 15%;
+    margin-top: 10%;
     margin-left: 30%;
 }
 .ncae-pictures {
@@ -130,6 +130,22 @@
     margin-top: 15%;
     margin-left: 30%;
 }
+
+.education-pictures {
+
+    width: 300px;
+    margin-top: -5%;
+    margin-left: -5%;
+    margin-bottom: -5%;
+}
+.education-pictures1 {
+
+    width: 250px;
+    margin-top: 0%;
+    margin-left: -1%;
+    margin-bottom: 0;
+}
+
 
 .home-description {
     margin-left: 35%;
@@ -156,7 +172,7 @@
     opacity: 0;
     transition: all 1s;
     filter: blur(5px);
-    transform: translateX(+80%);
+    transform: translateX(+60%);
 
   }
 
@@ -165,11 +181,37 @@
     filter: blur(0);
     transform: translateX(0);
   }
-  
+
+  .education-text {
+    margin-left: 30%;
+    margin-top: 10%;
+    width: 1000px;
+    font-size: clamp(10px, 2vw, 20px);
+    font-family: Merriweather;
+    margin-bottom: 2%;
+    
+}
+
+.waviy {
+    position: relative;
+  }
+  .waviy span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    text-transform: uppercase;
+    animation: flip 4s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
 
   @keyframes slide-in {
     from {
-      transform: translateX(+100%);
+      transform: translateX(+50%);
     }
     to {
       transform: translateX(0);
