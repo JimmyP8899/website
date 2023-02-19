@@ -149,7 +149,7 @@
 
 .home-description {
     margin-left: 35%;
-    font-size: clamp(15px, 2vw, 20px);
+    font-size: clamp(18px, 1vw, 30px);
     margin-bottom: 10%;
     color: rgba(115,115,121,255);
     font-family: Merriweather;
