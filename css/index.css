@@ -233,5 +233,133 @@
     100% { opacity: 1; }
   }
 
-
+  @media (max-width: 1000px) {
+    .left-panel {
+      display: none;
+    }
   
+    .timeline {
+      max-width: 100%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      /* Adjust other styles as needed */
+    }
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 60%;
+
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    left:10%;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #333;
+  }
+
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 5%;
+    transition: transform 0.3s ease;
+   
+  }
+
+
+
+  .timeline-item-content {
+    position: relative;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+
+  }
+
+  .timeline-item:hover {
+    transform: scale(1.05);
+  }
+
+  .timeline-item:hover::before {
+    transform: scale(1.5);
+    top:170px;
+
+  }
+
+  .timeline-item-content:hover {
+    transform: translateY(-5px);
+  }
+
+  h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .timeline-period {
+  position: relative;
+  bottom: 10px;
+  left: 80%; 
+  transform: translateY(-50%);
+  width: 140px; 
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  font-size: 14px;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:hover .timeline-period {
+  opacity: 1;
+}
+
+
+.sony-pictures,.competition-pictures{
+  width:180px;
+  margin-left:0px;
+}
+.swift-pictures {
+  width:250px;
+  margin-left:0px;
+}
+.hivestorm-pictures {
+  width:300px;
+  margin-left:0px;
+}
+.ncae-pictures {
+  height:150px;
+  margin-left:0px;
+}
