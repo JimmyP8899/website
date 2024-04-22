@@ -48,3 +48,47 @@
             document.getElementById("redirect-instagram").addEventListener("click", function() {
               window.open("https://www.instagram.com/jimmypeng_xd/");
             });
+
+    $(document).ready(function () {
+      const textArray = textString.split("");
+      const textElem = $(".hacking-animation__text");
+
+      let count = 0;
+      let intervalId;
+
+      function animateText() {
+        intervalId = setInterval(() => {
+          if (textArray[count] === "\n") {
+            textElem.append("<br>");
+          } else {
+            textElem.append(
+              `<span class="hacking-animation__character">${textArray[count]}</span>`
+            );
+          }
+
+          count++;
+          if (count === textArray.length) {
+            clearInterval(intervalId); // Stop the animation when finished writing text
+          }
+        }, 10); // Adjust interval duration as needed for animation speed
+      }
+
+      // Start animation when the document is ready
+      animateText();
+    });
+
+    var textString = `
+C:\\Users>
+
+Hello, I'm Jimmy!
+
+I am a Computer Science student studying at California State Polytechnic Pomona, 
+with an interest in cybersecurity. I participate in a club called Students With an 
+Interest in the Future of Technology (SWIFT) and am eager to keep improving my 
+knowledge about cybersecurity and software development. Currently, I participate in 
+both red teaming and blue teaming competitions such as the Collegiate Cyber Defense 
+Competition (CCDC), Hivestorm, and the National Centers of Academic Excellence in 
+CybersecurityCompetition (NCAE-C).
+
+
+`;
