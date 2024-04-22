@@ -363,3 +363,67 @@
   height:150px;
   margin-left:0px;
 }
+
+
+   
+
+.terminal-window {
+    position:relative;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 900px;;
+  margin: 20px auto;
+  overflow: hidden;
+  margin-left:30%;
+    top:100px;
+}
+
+.terminal-header {
+  height: 30px;
+  background-color: #4c4a48;
+  padding: 5px;
+}
+
+.terminal-button {
+    width:40px;
+height:40px;
+background-color:red;
+position:relative;
+border-radius:6px;
+box-shadow:2px 2px 4px 0 white;
+}
+
+
+.terminal-body {
+  padding-left: 20px;
+  font-family: "Share Tech Mono", monospace;
+  color: #eee;
+}
+
+.hacking-animation {
+
+  color: #eee;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hacking-animation__text {
+  font-family: "Share Tech Mono", monospace;
+  color: #eee;
+  font-size: 18px;
+  line-height: 1.5rem;
+  padding: 2rem;
+}
+
+.hacking-animation__character {
+  color: white;
+}
+
+/* New CSS for the image */
+.TerminalIcons {
+    float: right;
+  top: 0;
+  right: 0;
+}
