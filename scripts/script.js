@@ -82,13 +82,13 @@ C:\\Users>
 
 Hello, I'm Jimmy!
 
-I am a Computer Science student studying at California State Polytechnic Pomona, 
-with an interest in cybersecurity. I participate in a club called Students With an 
-Interest in the Future of Technology (SWIFT) and am eager to keep improving my 
-knowledge about cybersecurity and software development. Currently, I participate in 
-both red teaming and blue teaming competitions such as the Collegiate Cyber Defense 
-Competition (CCDC), Hivestorm, and the National Centers of Academic Excellence in 
-CybersecurityCompetition (NCAE-C).
-
-
+I'm a Computer Science student at California State Polytechnic Pomona, passionate 
+about cybersecurity and software development. As an active member of Students With 
+an Interest in the Future of Technology (SWIFT), I'm constantly seeking 
+opportunities to expand my knowledge and skills in cybersecurity. My journey 
+includes participating in both red teaming and blue teaming competitions like 
+the Collegiate Cyber Defense Competition (CCDC), Hivestorm, and the National Centers 
+of Academic Excellence in Cybersecurity Competition (NCAE-C). These experiences 
+have not only sharpened my technical abilities but also instilled in me a deep 
+commitment to staying at the forefront of cybersecurity innovation.
 `;
